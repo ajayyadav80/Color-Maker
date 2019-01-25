@@ -1,0 +1,47 @@
+<html>
+
+<head>
+
+    <title>Color-calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="main.js"></script>
+
+</head>
+
+<body class="body">
+
+    <div class="card">
+        <h1>COLOR CONVERTER</h1>
+        <div class="rectangle" id="rect">
+            <div class="text">
+                <br>
+                RGB:<span id="rgb">0</span><br>
+                WEB-COLOR:<span id="hex">0</span>
+            </div>
+
+        </div>
+        <br>
+        <div class="slidecontainer">
+            <input type="range" min="0" max="255" value="0" class="slider" style="background-color:red" id="redslider"
+                onchange="showValue(this.value,'red-range')">
+            <span id="red-range">0</span>
+            <br><br>
+            <input type="range" min="0" max="255" value="0" class="slider" style="background-color:green" id="greenslider"
+                onchange="showValue(this.value,'green-range')">
+            <span id="green-range">0</span>
+            <br><br>
+            <input type="range" min="0" max="255" value="0" class="slider" style="background-color:blue" id="blueslider"
+                onchange="showValue(this.value,'blue-range')">
+            <span id="blue-range">0</span><br>
+            <br><br>
+
+            <br><br>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
